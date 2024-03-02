@@ -1,0 +1,56 @@
+{
+  "editor.accessibilitySupport": "off",
+  "editor.formatOnSave": true,
+  "playwright.reuseBrowser": true,
+  "editor.stickyScroll.enabled": true,
+  "files.autoSave": "afterDelay",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "svelte.enable-ts-plugin": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 13,
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "editor.renderWhitespace": "none",
+  "git.mergeEditor": true,
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  "typeChallenges.workspaceFolder": "/Users/alex/.typeChallenges",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "githubPullRequests.pullBranch": "never",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false
+  },
+  "window.zoomLevel": 1,
+  "editor.minimap.enabled": false,
+  "go.toolsManagement.autoUpdate": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "solidity.telemetry": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.sideBar.location": "right",
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "window.commandCenter": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.layoutControl.enabled": false,
+  "window.titleBarStyle": "native",
+  "window.customTitleBarVisibility": "never",
+  "apc.electron": {
+    "frame": false
+  },
+  "apc.activityBar": {
+    "position": "bottom",
+    "size": 25
+  },
+  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+  "lldb.launch.expressions": "native",
+  "cSpell.userWords": ["webrpc"],
+  "security.promptForLocalFileProtocolHandling": false,
+  "workbench.editor.showTabs": "none",
+  "workbench.statusBar.visible": false
+}

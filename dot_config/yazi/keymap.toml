@@ -1,0 +1,5 @@
+[manager]
+prepend_keymap = [
+	{ on = [  "c", "a"  ], exec = """  shell --confirm 'chezmoi add "$@"'  """, desc = "chezmoi add" },
+	{ on = [ "o", "c" ], exec = """  shell --confirm 'code "$@"'  """,  desc = "open code"  }
+]
