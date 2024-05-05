@@ -13,13 +13,11 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontSize": 13,
-  "workbench.colorTheme": "Catppuccin Mocha",
   "editor.renderWhitespace": "none",
-  "git.mergeEditor": true,
-  "merge-conflict.autoNavigateNextConflict.enabled": true,
   "typeChallenges.workspaceFolder": "/Users/alex/.typeChallenges",
   "workbench.iconTheme": "catppuccin-mocha",
   "githubPullRequests.pullBranch": "never",
+  "colorize.languages": ["typescript", "javascript", "css", "scss"],
   "github.copilot.enable": {
     "*": true,
     "plaintext": true,
@@ -52,5 +50,10 @@
   "cSpell.userWords": ["webrpc"],
   "security.promptForLocalFileProtocolHandling": false,
   "workbench.editor.showTabs": "none",
-  "workbench.statusBar.visible": false
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "vim.smartRelativeLine": true,
+  "terminal.integrated.env.osx": {},
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "Warp.app",
+  "diffEditor.renderSideBySide": false
 }
