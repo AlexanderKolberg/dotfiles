@@ -1,12 +1,9 @@
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 source "${HOME}/.zgenom/zgenom.zsh"
 
 zgenom autoupdate
 zgenom ohmyzsh
 zgenom ohmyzsh plugins/git
+zgenom ohmyzsh plugins/asdf
 zgenom load zdharma-continuum/fast-syntax-highlighting
 zgenom load zsh-users/zsh-history-substring-search
 zgenom load zsh-users/zsh-autosuggestions
@@ -29,8 +26,6 @@ alias vim='nvim'
 alias vi='nvim'
 alias ls='lsd'
 alias cat='bat'
-
-
 
 function ya() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
@@ -67,9 +62,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
-
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 
 eval "$(fzf --zsh)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/config.json)"
+eval "$(zoxide init zsh)"
