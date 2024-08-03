@@ -1,0 +1,25 @@
+import = [
+   "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[font]
+  size = 16
+
+[font.normal]
+  family = "JetBrainsMono Nerd Font Mono"
+  style = "Regular"
+
+[window]
+  decorations = "Buttonless"
+  padding = { x = 10, y = 10 }
+
+[keyboard]
+  bindings = [
+   { key= "Left",     mods= "Alt",     chars= "\u001bb"                         }, # one word left
+   { key= "Right",    mods= "Alt",     chars= "\u001bf"                         }, # one word right
+   { key= "Left",     mods= "Command", chars= "\u001bOH",   mode= "AppCursor"   }, # Home
+   { key= "Right",    mods= "Command", chars= "\u001bOF",   mode= "AppCursor"   } # End
+]
+
+[env]
+  TERM = "xterm-256color"

@@ -1,0 +1,97 @@
+after-startup-command = ['exec-and-forget  borders active_color=0xfff5c2e7 inactive_color=0xff494d64 width=6.0']
+
+start-at-login = true
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+accordion-padding = 30
+non-empty-workspaces-root-containers-layout-on-startup = 'smart'
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'auto'
+
+gaps.inner.horizontal = 15
+gaps.inner.vertical = 15
+gaps.outer.left = 15
+gaps.outer.bottom = 10
+gaps.outer.top = 15
+gaps.outer.right = 15
+
+## windows that should float
+[[on-window-detected]]
+if.app-id = 'com.apple.systempreferences'
+run = 'layout floating'
+[[on-window-detected]]
+if.app-id = 'com.bitwarden.desktop'
+run = 'layout floating'
+[[on-window-detected]]
+if.app-id = 'com.apple.iCal'
+run = 'layout floating'
+[[on-window-detected]]
+if.app-id = 'com.apple.Photos'
+run = 'layout floating'
+[[on-window-detected]]
+if.app-id = 'com.raycast.macos'
+run = 'layout floating'
+
+[mode.main.binding]
+# See: https://nikitabobko.github.io/AeroSpace/commands.html#layout
+cmd-ctrl-alt-slash = 'layout tiles horizontal vertical'
+cmd-ctrl-alt-comma = 'layout accordion horizontal vertical'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands.html#focus
+cmd-ctrl-alt-h = 'focus left'
+cmd-ctrl-alt-j = 'focus down'
+cmd-ctrl-alt-k = 'focus up'
+cmd-ctrl-alt-l = 'focus right'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands.html#move-through
+cmd-ctrl-alt-shift-h = 'move-through left'
+cmd-ctrl-alt-shift-j = 'move-through down'
+cmd-ctrl-alt-shift-k = 'move-through up'
+cmd-ctrl-alt-shift-l = 'move-through right'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands.html#resize
+cmd-ctrl-alt-shift-minus = 'resize smart -50'
+cmd-ctrl-alt-shift-equal = 'resize smart +50'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands.html#workspace
+cmd-ctrl-alt-1 = 'workspace 1'
+cmd-ctrl-alt-2 = 'workspace 2'
+cmd-ctrl-alt-3 = 'workspace 3'
+cmd-ctrl-alt-4 = 'workspace 4' 
+cmd-ctrl-alt-5 = 'workspace 5'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands.html#move-node-to-workspace
+cmd-ctrl-alt-shift-1 = 'move-node-to-workspace 1'
+cmd-ctrl-alt-shift-2 = 'move-node-to-workspace 2'
+cmd-ctrl-alt-shift-3 = 'move-node-to-workspace 3'
+cmd-ctrl-alt-shift-4 = 'move-node-to-workspace 4'
+cmd-ctrl-alt-shift-5 = 'move-node-to-workspace 5'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands.html#workspace-back-and-forth
+cmd-ctrl-alt-tab = 'workspace-back-and-forth'
+# See: https://nikitabobko.github.io/AeroSpace/commands.html#move-workspace-to-monitor
+cmd-ctrl-alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+
+cmd-ctrl-alt-shift-f = 'fullscreen'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands.html#mode
+cmd-ctrl-alt-semicolon = 'mode service'
+alt-shift-slash = 'mode join'
+
+# 'service' binding mode declaration.
+# See: https://nikitabobko.github.io/AeroSpace/guide.html#binding-modes
+[mode.service.binding]
+r = ['flatten-workspace-tree', 'mode main'] # reset layout
+#s = ['layout sticky tiling', 'mode main'] # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
+f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
+backspace = ['close-all-windows-but-current', 'mode main']
+esc = ['reload-config', 'mode main']
+
+# 'join' binding mode declaration
+# See: https://nikitabobko.github.io/AeroSpace/guide.html#binding-modes
+[mode.join.binding]
+alt-shift-h = ['join-with left', 'mode main']
+alt-shift-j = ['join-with down', 'mode main']
+alt-shift-k = ['join-with up', 'mode main']
+alt-shift-l = ['join-with right', 'mode main']
+esc = 'mode main'
