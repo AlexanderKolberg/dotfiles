@@ -40,11 +40,11 @@ return {
 
   -- 'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   { 'github/copilot.vim' },
+
   {
     'alexghergh/nvim-tmux-navigation',
     config = function()
       require('nvim-tmux-navigation').setup {
-        disable_when_zoomed = true, -- defaults to false
         keybindings = {
           left = '<C-h>',
           down = '<C-j>',
@@ -56,6 +56,7 @@ return {
       }
     end,
   },
+
   {
     'folke/which-key.nvim',
     event = 'VeryLazy',
