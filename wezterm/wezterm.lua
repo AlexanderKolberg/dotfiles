@@ -14,42 +14,41 @@ config.window_padding = {
 	bottom = 0,
 }
 
-config.background = {
-	{
-		source = {
-			Color = "#0B0B0F",
-		},
-		width = "100%",
-		height = "100%",
-	},
-	-- {
-	-- 	source = {
-	-- 		Gradient = {
-	-- 			colors = { "#1E1E2E" },
-	-- 		},
-	-- 	},
-	-- 	width = "100%",
-	-- 	height = "100%",
-	-- 	opacity = 0.98,
-	-- },
-	-- {
-	-- 	source = {
-	-- 		File = {
-	-- 			path = "/Users/alex/Downloads/blob_blue.gif",
-	-- 			speed = 0.001,
-	-- 		},
-	-- 	},
-	-- 	repeat_x = "NoRepeat",
-	-- 	repeat_y = "NoRepeat",
-	-- 	vertical_align = "Middle",
-	-- 	width = "100%",
-	-- 	height = "Cover",
-	-- 	opacity = 0.30,
-	-- 	hsb = {
-	-- 		hue = 0.9,
-	-- 		saturation = 0.8,
-	-- 		brightness = 0.1,
-}
+-- config.background = {
+-- 	{
+-- 		source = {
+-- 			Color = "#0B0B0F",
+-- 		},
+-- 		width = "100%",
+-- 		height = "100%",
+--
+-- 		source = {
+-- 			Gradient = {
+-- 				colors = { "#1E1E2E" },
+-- 			},
+-- 		},
+-- 		width = "100%",
+-- 		height = "100%",
+-- 		opacity = 0.98,
+-- 	},
+-- 	{
+-- 		source = {
+-- 			File = {
+-- 				path = "/Users/alex/Downloads/blob_blue.gif",
+-- 				speed = 0.001,
+-- 			},
+-- 		},
+-- 		repeat_x = "NoRepeat",
+-- 		repeat_y = "NoRepeat",
+-- 		vertical_align = "Middle",
+-- 		width = "100%",
+-- 		height = "Cover",
+-- 		opacity = 0.30,
+-- 		hsb = {
+-- 			hue = 0.9,
+-- 			saturation = 0.8,
+-- 			brightness = 0.1,
+-- }
 config.use_ime = false
 
 config.enable_tab_bar = false
