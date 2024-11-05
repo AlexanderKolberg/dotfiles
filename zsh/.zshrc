@@ -13,6 +13,8 @@ zgenom load peterhurford/git-it-on.zsh
 zgenom load so-fancy/diff-so-fancy
 zgenom load atuinsh/atuin
 
+set -o vi
+
 # Colorize grep output 
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
@@ -26,7 +28,7 @@ alias rm='rm -i'
 alias vim='nvim'
 alias vi='nvim'
 alias ls='lsd'
-alias cat='bat'
+# alias cat='bat'
 
 function ya() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
