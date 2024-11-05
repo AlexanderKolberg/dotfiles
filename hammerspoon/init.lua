@@ -50,6 +50,7 @@ local function launchOrFocusOrRotate(app)
 end
 
 ctrlCmdShortcuts = {
+	{ "F", "Figma" },
 	{ "I", "Visual Studio Code" },
 	{ "T", "WezTerm" },
 	{ "S", "Slack" },
@@ -62,4 +63,3 @@ for i, shortcut in ipairs(ctrlCmdShortcuts) do
 		launchOrFocusOrRotate(shortcut[2])
 	end)
 end
-
