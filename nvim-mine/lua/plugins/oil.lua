@@ -3,7 +3,6 @@ vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
 return {
   'stevearc/oil.nvim',
   opts = {},
-  -- Optional dependencies
   dependencies = { 'echasnovski/mini.icons', 'nvim-tree/nvim-web-devicons' },
   config = function()
     require('oil').setup {
@@ -17,6 +16,12 @@ return {
           return name == '..' or name == '.git'
         end,
       },
+      lsp_file_methods = {
+        enabled = true,
+        timeout_ms = 1000,
+        autosave_changes = false,
+      },
+      -- C
       float = {
         padding = 2,
         max_width = 90,
