@@ -52,7 +52,7 @@ end
 ctrlCmdShortcuts = {
 	{ "F", "Figma" },
 	{ "I", "Visual Studio Code" },
-	{ "T", "WezTerm" },
+	{ "T", "Ghostty" },
 	{ "S", "Slack" },
 	{ "B", "Arc" },
 	{ "M", "YouTube Music" },
