@@ -25,10 +25,12 @@ alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
 
+alias cdroot='cd ./$(git rev-parse --show-cdup)'
+
 alias vim='nvim'
 alias vi='nvim'
 alias ls='lsd'
-# alias cat='bat'
+alias cat='bat --paging=never'
 
 function ya() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
