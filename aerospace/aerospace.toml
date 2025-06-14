@@ -34,6 +34,21 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'com.raycast.macos'
 run = 'layout floating'
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browsers'
+run = 'move-node-to-workspace 1'
+[[on-window-detected]]
+if.app-id = 'com.mitchellh.ghostty'
+run = 'move-node-to-workspace 2'
+[[on-window-detected]]
+if.app-id = 'com.todesktop.230313mzl4w4u92' #Cursor
+run = 'move-node-to-workspace 3'
+[[on-window-detected]]
+if.app-id = 'com.tinyspeck.slackmacgap'
+run = 'move-node-to-workspace 4'
+[[on-window-detected]]
+if.app-id = 'com.anthropic.claudefordesktop'
+run = 'move-node-to-workspace 5'
 
 [mode.main.binding]
 # See: https://nikitabobko.github.io/AeroSpace/commands.html#layout
@@ -57,11 +72,11 @@ cmd-ctrl-alt-shift-minus = 'resize smart -50'
 cmd-ctrl-alt-shift-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands.html#workspace
-cmd-ctrl-alt-1 = 'workspace 1'
-cmd-ctrl-alt-2 = 'workspace 2'
-cmd-ctrl-alt-3 = 'workspace 3'
-cmd-ctrl-alt-4 = 'workspace 4' 
-cmd-ctrl-alt-5 = 'workspace 5'
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+alt-4 = 'workspace 4' 
+alt-5 = 'workspace 5'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands.html#move-node-to-workspace
 cmd-ctrl-alt-shift-1 = 'move-node-to-workspace 1'

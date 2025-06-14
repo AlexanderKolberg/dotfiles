@@ -1,9 +1,10 @@
+ zmodload zsh/zprof
 source "${HOME}/.zgenom/zgenom.zsh"
 
 zgenom autoupdate
 zgenom ohmyzsh
 zgenom ohmyzsh plugins/git
-zgenom ohmyzsh plugins/asdf
+ zgenom ohmyzsh plugins/asdf
 zgenom load zdharma-continuum/fast-syntax-highlighting
 zgenom load zsh-users/zsh-history-substring-search
 zgenom load zsh-users/zsh-autosuggestions
@@ -43,19 +44,12 @@ function ya() {
 
 eval $(thefuck --alias)
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
 export PATH="/Users/alex/.local/bin/:$PATH"
 
 # pnpm
 export PNPM_HOME="/Users/alex/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
-source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-source /opt/homebrew/opt/chruby/share/chruby/auto.sh
-chruby ruby-3.2.2
 
 alias air='~/go/bin/air'
 
@@ -69,6 +63,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval "$(fzf --zsh)"
-eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/config.json)"
+# eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/config.json)"
+eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
+ zprof

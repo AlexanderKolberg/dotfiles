@@ -1,4 +1,4 @@
 return {
-  { "neo-tree.nvim", enabled = false },
+  -- { "neo-tree.nvim", enabled = false },
   { "bufferline.nvim", enabled = false },
 }

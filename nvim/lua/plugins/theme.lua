@@ -1,15 +1,11 @@
 return {
   {
-    "catppuccin",
-    opts = {
-      flavor = "mocha",
-      -- transparent_background = true,
-    },
+    "olimorris/onedarkpro.nvim",
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "onedark",
     },
   },
 }

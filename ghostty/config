@@ -24,9 +24,22 @@ cursor-color = #cccccc
 selection-background = #979eab 
 selection-foreground = #282c34
 
-keybind = cmd+t=unbind
+keybind = cmd+t=text:\x02\x63
 keybind = cmd+n=unbind
-keybind = cmd+c=unbind
-keybind = cmd+w=unbind
+keybind = cmd+w=text:\x02\x78
+keybind = cmd+k=text:\x02\x4b
+keybind = cmd+g=text:\x02\x67
+keybind = cmd+1=text:\x02\x31
+keybind = cmd+2=text:\x02\x32
+keybind = cmd+3=text:\x02\x33
+keybind = cmd+4=text:\x02\x34
+keybind = cmd+5=text:\x02\x35
+keybind = cmd+6=text:\x02\x36
+keybind = cmd+7=text:\x02\x37
+keybind = cmd+8=text:\x02\x38
+keybind = cmd+9=text:\x02\x39
 keybind = cmd+opt+left=unbind
 keybind = cmd+opt+right=unbind
+
+keybind = global:cmd+escape=toggle_quick_terminal
+
