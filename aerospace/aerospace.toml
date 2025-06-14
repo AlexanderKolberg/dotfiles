@@ -1,7 +1,7 @@
-after-startup-command = ['exec-and-forget  borders active_color=0xeb6f92 inactive_color=0xff494d64 width=6.0']
-exec-on-workspace-change = ['/bin/bash', '-c',
-    'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
-]
+# after-startup-command = ['exec-and-forget  borders active_color=0xeb6f92 inactive_color=0xff494d64 width=6.0']
+# exec-on-workspace-change = ['/bin/bash', '-c',
+#     'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+# ]
 
 start-at-login = true
 enable-normalization-flatten-containers = true
@@ -34,6 +34,7 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'com.raycast.macos'
 run = 'layout floating'
+
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.Browsers'
 run = 'move-node-to-workspace 1'
@@ -77,13 +78,21 @@ alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
 alt-4 = 'workspace 4' 
 alt-5 = 'workspace 5'
+alt-6 = 'move-node-to-workspace 6'
+alt-7 = 'move-node-to-workspace 7'
+alt-8 = 'move-node-to-workspace 8'
+alt-9 = 'move-node-to-workspace 9'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands.html#move-node-to-workspace
-cmd-ctrl-alt-shift-1 = 'move-node-to-workspace 1'
-cmd-ctrl-alt-shift-2 = 'move-node-to-workspace 2'
-cmd-ctrl-alt-shift-3 = 'move-node-to-workspace 3'
-cmd-ctrl-alt-shift-4 = 'move-node-to-workspace 4'
-cmd-ctrl-alt-shift-5 = 'move-node-to-workspace 5'
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-3 = 'move-node-to-workspace 3'
+alt-shift-4 = 'move-node-to-workspace 4'
+alt-shift-5 = 'move-node-to-workspace 5'
+alt-shift-6 = 'move-node-to-workspace 6'
+alt-shift-7 = 'move-node-to-workspace 7'
+alt-shift-8 = 'move-node-to-workspace 8'
+alt-shift-9 = 'move-node-to-workspace 9'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands.html#workspace-back-and-forth
 cmd-ctrl-alt-tab = 'workspace-back-and-forth'
