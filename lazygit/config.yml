@@ -1,18 +1,17 @@
 gui:
   nerdFontsVersion: "3"
   theme:
-    # activeBorderColor:
-    #   - yellow
-    #   - reverse
-    # inactiveBorderColor:
-    #   - "#3a3a3a"
+  # activeBorderColor:
+  #   - yellow
+  #   - reverse
+  # inactiveBorderColor:
+  #   - "#3a3a3a"
   border: 'rounded' # one of 'single' | 'double' | 'rounded' | 'hidden'
-
 git:
-  paging:
-    colorArg: never
-    pager: delta --paging=never
-    useConfig: false
+  pagers:
+    - colorArg: never
+      pager: delta --paging=never
+      useConfig: false
   commit:
     signOff: false
   merging:

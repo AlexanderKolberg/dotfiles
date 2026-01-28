@@ -23,12 +23,12 @@ return {
       "TSStop",
     },
   },
-  {
-    "StephenGunn/sveltecheck.nvim",
-    config = function()
-      require("sveltecheck").setup({
-        command = "pnpm run check",
-      })
-    end,
-  },
+  -- {
+  --   "StephenGunn/sveltecheck.nvim",
+  --   config = function()
+  --     require("sveltecheck").setup({
+  --       command = "pnpm run check",
+  --     })
+  --   end,
+  -- },
 }

@@ -1,10 +1,10 @@
- zmodload zsh/zprof
+ # zmodload zsh/zprof
 source "${HOME}/.zgenom/zgenom.zsh"
 
 zgenom autoupdate
 zgenom ohmyzsh
 zgenom ohmyzsh plugins/git
- zgenom ohmyzsh plugins/asdf
+zgenom ohmyzsh plugins/asdf
 zgenom load zdharma-continuum/fast-syntax-highlighting
 zgenom load zsh-users/zsh-history-substring-search
 zgenom load zsh-users/zsh-autosuggestions
@@ -67,4 +67,4 @@ eval "$(fzf --zsh)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
- zprof
+ # zprof

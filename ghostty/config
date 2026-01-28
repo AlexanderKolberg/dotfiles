@@ -1,4 +1,5 @@
-window-decoration = false 
+##window-decoration = false 
+macos-titlebar-style = hidden
 font-size = 16
 palette = 0=#282c34
 palette = 1=#e06c75
@@ -20,15 +21,28 @@ palette = 15=#abb2bf
 background = #282c34
 foreground = #979eab
 
+# background-opacity = 0.96
+
+
 cursor-color = #cccccc
 selection-background = #979eab 
 selection-foreground = #282c34
+
 
 keybind = cmd+t=text:\x02\x63
 keybind = cmd+n=unbind
 keybind = cmd+w=text:\x02\x78
 keybind = cmd+k=text:\x02\x4b
 keybind = cmd+g=text:\x02\x67
+keybind = cmd+digit_1=unbind
+keybind = cmd+digit_2=unbind
+keybind = cmd+digit_3=unbind
+keybind = cmd+digit_4=unbind
+keybind = cmd+digit_5=unbind
+keybind = cmd+digit_6=unbind
+keybind = cmd+digit_7=unbind
+keybind = cmd+digit_8=unbind
+keybind = cmd+digit_9=unbind
 keybind = cmd+1=text:\x02\x31
 keybind = cmd+2=text:\x02\x32
 keybind = cmd+3=text:\x02\x33
@@ -41,5 +55,9 @@ keybind = cmd+9=text:\x02\x39
 keybind = cmd+opt+left=unbind
 keybind = cmd+opt+right=unbind
 
+
 keybind = global:cmd+escape=toggle_quick_terminal
 
+# OSC 52 clipboard support (for SSH + tmux)
+clipboard-read = allow
+clipboard-write = allow
