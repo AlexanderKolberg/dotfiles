@@ -68,3 +68,4 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
  # zprof
+export PATH=$PATH:$HOME/.maestro/bin

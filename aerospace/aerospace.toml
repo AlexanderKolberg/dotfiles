@@ -36,16 +36,16 @@ if.app-id = 'com.raycast.macos'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'com.vivaldi.Vivaldi'
+run = 'fullscreen on'
+
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
 run = 'move-node-to-workspace 1'
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
 run = 'move-node-to-workspace 2'
 [[on-window-detected]]
-if.app-id = 'com.todesktop.230313mzl4w4u92' #Cursor
-run = 'move-node-to-workspace 3'
-[[on-window-detected]]
-if.app-id = 'dev.zed.Zed'
+if.app-id = 'md.obsidian'
 run = 'move-node-to-workspace 3'
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
@@ -58,7 +58,8 @@ run = 'move-node-to-workspace 5'
 # See: https://nikitabobko.github.io/AeroSpace/commands.html#layout
 cmd-ctrl-alt-slash = 'layout tiles horizontal vertical'
 cmd-ctrl-alt-comma = 'layout accordion horizontal vertical'
-
+alt-o = ['exec-and-forget open -a "Obsidian"', 'workspace 3']
+alt-b = ['exec-and-forget open -a "Arc"', 'workspace 2']
 # See: https://nikitabobko.github.io/AeroSpace/commands.html#focus
 cmd-ctrl-alt-h = 'focus left'
 cmd-ctrl-alt-j = 'focus down'
