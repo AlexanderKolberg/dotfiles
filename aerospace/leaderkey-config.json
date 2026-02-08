@@ -1,0 +1,105 @@
+{
+  "type": "group",
+  "actions": [
+    {
+      "key": "b",
+      "label": "Arc",
+      "type": "command",
+      "value": "$HOME/dotfiles/aerospace/launch-or-focus.sh company.thebrowser.Browser Arc"
+    },
+    {
+      "key": "t",
+      "label": "Ghostty",
+      "type": "command",
+      "value": "$HOME/dotfiles/aerospace/launch-or-focus.sh com.mitchellh.ghostty Ghostty"
+    },
+    {
+      "key": "o",
+      "label": "Obsidian",
+      "type": "command",
+      "value": "$HOME/dotfiles/aerospace/launch-or-focus.sh md.obsidian Obsidian"
+    },
+    {
+      "key": "s",
+      "label": "Slack",
+      "type": "command",
+      "value": "$HOME/dotfiles/aerospace/launch-or-focus.sh com.tinyspeck.slackmacgap Slack"
+    },
+    {
+      "key": "c",
+      "label": "Claude",
+      "type": "command",
+      "value": "$HOME/dotfiles/aerospace/launch-or-focus.sh com.anthropic.claudefordesktop Claude"
+    },
+    {
+      "key": "m",
+      "label": "Music",
+      "type": "group",
+      "iconPath": "music.note",
+      "actions": [
+        {
+          "key": "m",
+          "label": "Open Music",
+          "type": "command",
+          "value": "$HOME/dotfiles/aerospace/launch-or-focus.sh com.apple.Music Music"
+        },
+        {
+          "key": "p",
+          "label": "Play / Pause",
+          "type": "command",
+          "value": "osascript -e 'tell application \"Music\" to playpause'"
+        },
+        {
+          "key": "x",
+          "label": "Mute / Unmute",
+          "type": "command",
+          "value": "osascript -e 'tell application \"Music\" to set mute to not mute'"
+        },
+        {
+          "key": "n",
+          "label": "Next Track",
+          "type": "command",
+          "value": "osascript -e 'tell application \"Music\" to next track'"
+        },
+        {
+          "key": "b",
+          "label": "Previous Track",
+          "type": "command",
+          "value": "osascript -e 'tell application \"Music\" to previous track'"
+        }
+      ]
+    },
+    {
+      "key": "w",
+      "label": "Window",
+      "type": "group",
+      "iconPath": "rectangle.grid.2x2",
+      "actions": [
+        {
+          "key": "f",
+          "label": "Toggle Fullscreen",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace fullscreen"
+        },
+        {
+          "key": "r",
+          "label": "Reset Layout",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace flatten-workspace-tree"
+        },
+        {
+          "key": "t",
+          "label": "Toggle Float/Tile",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace layout floating tiling"
+        },
+        {
+          "key": "c",
+          "label": "Reload Config",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace reload-config"
+        }
+      ]
+    }
+  ]
+}
